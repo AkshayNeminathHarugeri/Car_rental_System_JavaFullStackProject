@@ -1,0 +1,38 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: car_rental_db
+    environment:
+      MYSQL_DATABASE: rent_a_car
+      MYSQL_ROOT_PASSWORD: akshay2003
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  backend:
+    build: ./car-rental-system-backend
+    container_name: car_rental_backend
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://car_rental_db:3306/rent_a_car?useSSL=false&serverTimezone=UTC&allowPublicKeyRetrieval=true
+      SPRING_DATASOURCE_USERNAME: root
+      SPRING_DATASOURCE_PASSWORD: akshay2003
+      com.carrentalsystem.image.variant.folder.path: /app/images/variant
+      com.carrentalsystem.image.license.folder.path: /app/images/license
+    volumes:
+      - ./images:/app/images
+
+  frontend:
+    build: ./car-rental-system-frontend
+    container_name: car_rental_frontend
+    depends_on:
+      - backend
+    ports:
+      - "3000:80"
+
+volumes:
+  mysql_data:

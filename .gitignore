@@ -1,0 +1,12 @@
+# IDE files
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+out/
+build/
+
+# OS files
+.DS_Store
+Thumbs.db
