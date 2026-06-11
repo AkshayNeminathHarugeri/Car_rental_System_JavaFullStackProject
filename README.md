@@ -54,13 +54,14 @@ The application utilizes a relational database structure designed for integrity 
 
 ## 📸 Screenshots
 
-| Home & Search | functionality |
+| Homepage | Login Page |
 |:---:|:---:|
-| ![Home](https://via.placeholder.com/500x300?text=Home+Page) | ![Search](https://via.placeholder.com/500x300?text=Search+Results) |
+| ![Homepage](images/screenshots/homepage.png) | ![Login Page](images/screenshots/login.png) |
 
-| Booking Process | Admin Dashboard |
+| Register Page | Admin Dashboard |
 |:---:|:---:|
-| ![Booking](https://via.placeholder.com/500x300?text=Booking+Flow) | ![Admin](https://via.placeholder.com/500x300?text=Admin+Panel) |
+| ![Register Page](images/screenshots/register.png) | ![Admin Dashboard](images/screenshots/admin_dashboard.png) |
+
 
 ---
 
