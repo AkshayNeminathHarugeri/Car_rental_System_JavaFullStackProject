@@ -3,7 +3,7 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=spring-boot&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)
 
 > **Drive your journey with ease, comfort, and style.** 🌍
@@ -32,7 +32,7 @@
 
 *   **Frontend:** React (v18), Bootstrap 5, Axios, React Toastify
 *   **Backend:** Spring Boot (v3.2), Spring Security (JWT), Spring Data JPA
-*   **Database:** PostgreSQL
+*   **Database:** MySQL
 *   **Tools:** Maven, OpenPDF (for report generation)
 
 ---
@@ -69,13 +69,13 @@ The application utilizes a relational database structure designed for integrity 
 
 1.  **Clone the repository:**
     ```bash
-    git clone https://github.com/akadirdgn/Car-Rental-Full-Stack-Project.git
-    cd Car-Rental-Full-Stack-Project
+    git clone https://github.com/AkshayNeminathHarugeri/Car_rental_System_JavaFullStackProject.git
+    cd Car_rental_System_JavaFullStackProject
     ```
 
 2.  **Backend Setup:**
     - Navigate to `car-rental-system-backend`.
-    - Configure PostgreSQL credentials in `application.properties`.
+    - Configure MySQL credentials in `application.properties`.
     - Run: `./mvnw spring-boot:run`
 
 3.  **Frontend Setup:**
